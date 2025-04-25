@@ -13,7 +13,7 @@ body {
 
   /* Fondo general (para computadoras) */
 body {
-  background: url"clip.mp4" no-repeat center center fixed;
+  background: url"clip.mp4" si-repeat center center fixed;
   background-size: cover;
 }
 
