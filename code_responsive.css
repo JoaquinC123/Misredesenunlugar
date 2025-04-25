@@ -1,90 +1,62 @@
-
-/* Estilo general del body */
 body {
   font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  overflow: hidden;
-
-  /* Fondo general (para computadoras) */
-body {
-  background: url"clip.mp4" autoplay muted loop center center fixed;
-  background-size: cover;
+  min-height: 100vh;
+  margin: 0;
 }
-
-/* Fondo diferente para celulares */
-@media screen and (max-width: 768px) {
-  body {
-    background: url"car cel.mp4" autoplay muted loop center center fixed;
-    background-size: cover;
-   object-fit: cover;
-  }
-}
-
-}
-
-/* Contenedor del contenido */
 .container {
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  padding: 30px 20px;
-  max-width: 340px;
-  width: 90%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
   text-align: center;
-  z-index: 2;
-}
+  width: 90%;
+  max-width: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 
-/* Imagen de perfil */
+  backdrop-filter: blur(13px) saturate(200%);
+  -webkit-backdrop-filter: blur(13px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
 .profile-img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
+  z-index: 2;
 }
-
-/* Títulos y textos */
 h1 {
+  margin-bottom: 10px;
   font-size: 24px;
   color: white;
-  margin-bottom: 10px;
-  text-shadow: 1px 1px 3px black;
+  z-index: 3;
+  text-shadow: 2px 2px 4px black;
 }
-
 p {
-  font-size: 16px;
-  color: white;
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 3px black;
+  margin-bottom: 25px;
+  color: #ffffff;
+  z-index: 4;
+  text-shadow: 2px 2px 4px black;
 }
-
-/* Enlaces */
 .link {
   display: block;
-  text-decoration: none;
   background-color: #9b1394;
   color: white;
-  padding: 12px;
+  text-decoration: none;
+  padding: 12px 20px;
   margin: 10px 0;
   border-radius: 10px;
   transition: background-color 0.3s;
+  z-index: 5;
 }
-
-.link:hover {
+.link-btn:hover {
   background-color: #8f25b9;
-  color: rgb(255, 255, 255);
 }
-
-/* Video de fondo */
 .myvideo {
   position: fixed;
   width: 100vh;
@@ -98,39 +70,7 @@ p {
   min-width: 100%;
 }
 
-/* Responsive */
-@media screen and (max-width: 480px) {
-  h1 {
-    font-size: 40px;
-  }
-
-  p {
-    font-size: 34px;
-  }
-
-  .profile-img {
-    width: 100px;
-    height: 100px;
-  }
-
-  .link {
-    font-size: 14px;
-    padding: 10px;
-  }
-  .cel{
-    position: fixed;
-  width: 100vh;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-height: 100%;
-  min-width: 100%;
-  }
-
-  .myvideo, .cel {
+.myvideo, .cel {
   position: fixed;
   top: 0; left: 0;
   min-width: 100%;
@@ -154,5 +94,9 @@ p {
   }
 }
 
-  
+
+
+a:hover{
+color: rgb(104, 0, 57);
+
 }
