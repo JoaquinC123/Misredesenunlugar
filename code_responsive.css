@@ -104,13 +104,13 @@ p {
   .myvideo{
     position: fixed;
   width: 50vh;
-  height: 50%;
+  height: 100%;
   object-fit: cover;
   z-index: 0;
   position: fixed;
   right: 0;
   bottom: 0;
-  min-height: 50%;
+  min-height: 100%;
   min-width: 50%;
   }
 }
