@@ -10,6 +10,21 @@ body {
   align-items: center;
   position: relative;
   overflow: hidden;
+
+  /* Fondo general (para computadoras) */
+body {
+  background: url"clip.mp4" no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Fondo diferente para celulares */
+@media screen and (max-width: 768px) {
+  body {
+    background: url("car cel.mp4") no-repeat center center fixed;
+    background-size: cover;
+  }
+}
+
 }
 
 /* Contenedor del contenido */
