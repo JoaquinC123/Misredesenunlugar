@@ -129,4 +129,30 @@ p {
   min-height: 100%;
   min-width: 100%;
   }
+
+  .myvideo, .cel {
+  position: fixed;
+  top: 0; left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Ocultar video de celular en pantallas grandes */
+.cel {
+  display: none;
+}
+
+/* Mostrar solo en celulares */
+@media screen and (max-width: 768px) {
+  .myvideo {
+    display: none;
+  }
+  .cel {
+    display: block;
+  }
+}
+
+  
 }
