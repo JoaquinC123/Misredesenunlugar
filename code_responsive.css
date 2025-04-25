@@ -13,14 +13,14 @@ body {
 
   /* Fondo general (para computadoras) */
 body {
-  background: url"clip.mp4" si-repeat center center fixed;
+  background: url"clip.mp4" autoplay muted loop center center fixed;
   background-size: cover;
 }
 
 /* Fondo diferente para celulares */
 @media screen and (max-width: 768px) {
   body {
-    background: url"car cel.mp4" si-repeat center center fixed;
+    background: url"car cel.mp4" autoplay muted loop center center fixed;
     background-size: cover;
    object-fit: cover;
   }
