@@ -91,6 +91,8 @@ p {
   }
   .cel {
     display: block;
+      position: fixed;
+    object-fit: cover;
   }
 }
 
